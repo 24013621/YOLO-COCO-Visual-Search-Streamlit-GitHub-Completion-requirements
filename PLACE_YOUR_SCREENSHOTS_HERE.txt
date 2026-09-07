@@ -1,0 +1,17 @@
+This folder must contain your OWN screenshots (not copied/downloaded) of:
+
+1. 01_conda_activation.png
+   - VS Code terminal showing `conda activate yolo-streamlit` succeeding.
+
+2. 02_streamlit_run_terminal.png
+   - VS Code terminal showing `streamlit run app.py` running, with the
+     local URL (http://localhost:8501) printed.
+
+3. 03_streamlit_ui.png
+   - The Streamlit web app open in your browser, before uploading an image.
+
+4. 04_detection_result.png
+   - The Streamlit app after uploading an image, showing the annotated
+     object detection result and the detections table.
+
+Delete this text file once you've added the real screenshots.

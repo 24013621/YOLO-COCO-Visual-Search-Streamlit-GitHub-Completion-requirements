@@ -1,0 +1,67 @@
+=====================================================================
+CONDA ENVIRONMENT SETUP — YOLOv8 Object Detection (COCO) + Streamlit
+=====================================================================
+
+Prerequisites:
+- Anaconda or Miniconda installed
+- Visual Studio Code installed, with the "Python" extension enabled
+- (GPU users only) an NVIDIA GPU with a supported driver
+
+---------------------------------------------------------------------
+STEP 1: Create and activate the Conda environment
+---------------------------------------------------------------------
+conda create -n yolo-streamlit python=3.10 -y
+conda activate yolo-streamlit
+
+---------------------------------------------------------------------
+STEP 2: Install PyTorch — choose ONE of the two options below
+---------------------------------------------------------------------
+
+Option A — CPU ONLY (no NVIDIA GPU / no CUDA):
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+
+Option B — GPU (NVIDIA CUDA 12.1 example — check your driver's CUDA
+version at https://pytorch.org/get-started/locally/ and adjust the
+"cu121" tag if needed):
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+Verify installation and GPU visibility:
+    python -c "import torch; print('CUDA available:', torch.cuda.is_available())"
+
+---------------------------------------------------------------------
+STEP 3: Install the remaining project dependencies
+---------------------------------------------------------------------
+pip install -r requirements.txt
+
+---------------------------------------------------------------------
+STEP 4: Open the project in VS Code
+---------------------------------------------------------------------
+1. Open VS Code, then File -> Open Folder... and select this project's
+   root folder.
+2. Open a new terminal in VS Code (Terminal -> New Terminal).
+3. Make sure the terminal is using the "yolo-streamlit" Conda
+   environment. If not, activate it manually:
+       conda activate yolo-streamlit
+4. In VS Code, press Ctrl+Shift+P -> "Python: Select Interpreter" and
+   choose the "yolo-streamlit" environment so linting/debugging use
+   the correct environment too.
+
+---------------------------------------------------------------------
+STEP 5: Run the Streamlit app
+---------------------------------------------------------------------
+streamlit run app.py
+
+This will open the app automatically in your browser at:
+    http://localhost:8501
+
+The first run will auto-download the YOLOv8n COCO-pretrained weights
+(yolov8n.pt) via the ultralytics package — an internet connection is
+required for this one-time download.
+
+---------------------------------------------------------------------
+STEP 6: Take the required screenshots (see README.md) while:
+---------------------------------------------------------------------
+1. The Conda environment is activated in the VS Code terminal
+2. "streamlit run app.py" is running in the VS Code terminal
+3. The Streamlit web UI is open in the browser
+4. An uploaded image shows the object detection result
