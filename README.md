@@ -1,5 +1,3 @@
-**Experiment No:** 04
-**Date:**
 
 # Real-Time Object Detection using YOLOv8 (COCO) with Streamlit
 
@@ -147,10 +145,14 @@ All screenshots are stored in the [`Screenshots/`](./Screenshots) folder. Requir
 
 | Screenshot | File |
 |---|---|
-| Conda environment activation in VS Code terminal | `Screenshots/01_conda_activation.png` |
-| Running `streamlit run app.py` in terminal | `Screenshots/02_streamlit_run_terminal.png` |
-| Streamlit web UI in browser | `Screenshots/03_streamlit_ui.png` |
-| Object detection result screen | `Screenshots/04_detection_result.png` |
+<img width="603" height="53" alt="image" src="https://github.com/user-attachments/assets/e71ef67b-9e3e-409c-a4db-eebfa4e15a39" />
+<img width="213" height="52" alt="image" src="https://github.com/user-attachments/assets/de6e9a4b-fde3-4ddc-8165-9aca98e0c382" />
+<img width="1750" height="90" alt="image" src="https://github.com/user-attachments/assets/ab8da443-31e9-4e3e-97bd-f9306312e225" />
+<img width="358" height="496" alt="image" src="https://github.com/user-attachments/assets/4d257ae4-570f-4576-af4a-b7c4e7fae5bb" />
+<img width="362" height="490" alt="image" src="https://github.com/user-attachments/assets/30b8d934-d970-45a7-963b-19e2455fa170" />
+<img width="452" height="232" alt="image" src="https://github.com/user-attachments/assets/5ba14963-4368-4a78-87eb-a59367a3b25c" />
+
+
 
 > ⚠️ Take these screenshots yourself while running the app on your own
 > machine — do not copy or reuse images from elsewhere, per the
